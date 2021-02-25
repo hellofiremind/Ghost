@@ -57,6 +57,7 @@ module.exports = {
     get mobiledocHtmlRenderer() {
         if (!mobiledocHtmlRenderer) {
             const MobiledocHtmlRenderer = require('@tryghost/kg-mobiledoc-html-renderer');
+            console.log({cards: this.cards});
 
             mobiledocHtmlRenderer = new MobiledocHtmlRenderer({
                 cards: this.cards,
