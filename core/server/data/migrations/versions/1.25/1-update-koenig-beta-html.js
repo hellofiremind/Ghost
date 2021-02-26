@@ -51,6 +51,7 @@ module.exports.up = function regenerateKoenigBetaHTML(options) {
                             delete card[1].imageStyle;
                         }
                     });
+                    console.log({cards1: mobiledoc.cards});
 
                     // re-render the html to remove .kg-post wrapper and adjust image classes
                     let version = 2;
